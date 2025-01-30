@@ -3,7 +3,13 @@ plugins {
 }
 
 group = 'com.github.whitemaks'
-version = '1.0-SNAPSHOT'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(23))
+    }
+}
 
 repositories {
     mavenCentral()
